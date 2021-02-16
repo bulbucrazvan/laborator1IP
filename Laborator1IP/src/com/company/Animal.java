@@ -10,5 +10,6 @@ public  abstract class Animal {
     }
     public String getName(){
         return name;
+        /*am editat aici*/
     }
 }
