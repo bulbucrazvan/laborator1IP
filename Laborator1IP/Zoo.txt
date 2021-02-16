@@ -1,0 +1,3 @@
+Building of type: bird - Penguin 
+Building of type: predatory - tiger wolf 
+Building of type: fish - Salmon 

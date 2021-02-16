@@ -13,6 +13,15 @@ public class Building {
             buildingAnimals.add(animal);
         }
     }
+    public String getInfo() {
+        String display=new String();
+        display+="Building of type: " + buildingType + " - ";
+        for (Animal a : buildingAnimals){
+            display+=a.getName() + " ";
+        }
+        display+='\n';
+        return display;
+    }
     public void printBuildingAnimals(){
         System.out.print("Building of type: " + buildingType + " - ");
         for (Animal a : buildingAnimals){

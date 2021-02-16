@@ -9,6 +9,13 @@ public class Zoo {
             b.printBuildingAnimals();
         }
     }
+    public String getInfo(){
+        String info=new String();
+        for (Building b : zooBuildings){
+            info+=b.getInfo();
+        }
+        return info;
+    }
     public void addBuilding(String type){
         zooBuildings.add(new Building(type));
     }
