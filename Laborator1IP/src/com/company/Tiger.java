@@ -5,4 +5,7 @@ public class Tiger extends Animal {
         type = "predatory";
         name = "tiger";
     }
+    public void wake(){
+        System.out.println("I'm a tiger. I woke up.");
+    }
 }

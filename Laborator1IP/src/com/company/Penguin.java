@@ -5,4 +5,7 @@ public class Penguin extends Animal{
         name = "Penguin";
         type = "bird";
     }
+    public void wake(){
+        System.out.println("I'm a penguin. I woke up.");
+    }
 }

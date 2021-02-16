@@ -8,6 +8,17 @@ public class Building {
     public Building(String type){
         this.buildingType = type;
     }
+    public Building(int type){
+        if (type == 0) {
+            buildingType = "bird";
+        }
+        else if (type == 1){
+            buildingType = "predatory";
+        }
+        else if (type == 2){
+            buildingType = "fish";
+        }
+    }
     public void addAnimal(Animal animal){
         if (this.buildingType.equals(animal.getType())){
             buildingAnimals.add(animal);
@@ -28,5 +39,10 @@ public class Building {
             System.out.print(a.getName() + " ");
         }
         System.out.println();
+    }
+    public void wakeAnimals(){
+        for (Animal a : buildingAnimals){
+            a.wake();
+        }
     }
 }

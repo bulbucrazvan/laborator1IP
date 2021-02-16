@@ -5,4 +5,7 @@ public class Salmon extends Animal{
         type = "fish";
         name = "Salmon";
     }
+    public void wake(){
+        System.out.println("I'm a salmon. I woke up.");
+    }
 }

@@ -5,4 +5,7 @@ public class Tuna extends Animal {
         type="fish";
         name="tuna";
     }
+    public void wake(){
+        System.out.println("I'm a tuna. I woke up.");
+    }
 }

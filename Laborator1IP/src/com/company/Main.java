@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Zoo myZoo = new Zoo();
-        myZoo.addBuilding("bird");
+        myZoo.addBuilding(0);
         myZoo.addBuilding("predatory");
         myZoo.addBuilding("fish");
         myZoo.addAnimal(0, new Penguin());
@@ -14,6 +14,7 @@ public class Main {
         myZoo.addAnimal(1, new Tiger());
         myZoo.addAnimal(1, new Tuna());
         myZoo.addAnimal(1, new Wolf());
+        myZoo.wakeAnimals(1);
         myZoo.printBuildings();
 
         try {

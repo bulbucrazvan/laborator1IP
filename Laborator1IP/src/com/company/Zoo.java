@@ -19,9 +19,16 @@ public class Zoo {
     public void addBuilding(String type){
         zooBuildings.add(new Building(type));
     }
+    public void addBuilding(int type){
+        zooBuildings.add(new Building(type));
+    }
     public void addAnimal(int buildingNumber, Animal animal){
         Building currentBuilding = zooBuildings.get(buildingNumber);
         currentBuilding.addAnimal(animal);
         zooBuildings.set(buildingNumber, currentBuilding);
+    }
+    public void wakeAnimals(int buildingNumber){
+        Building currentBuilding = zooBuildings.get(buildingNumber);
+        currentBuilding.wakeAnimals();
     }
 }
