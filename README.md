@@ -6,3 +6,4 @@ Echipa: Bulbuc Razvan, Bujoreanu Cristian B2
 -Pentru cerinta de clasa abstracta si mostenire, este clasa abstracta Animal si clasele mostenite (Wolf, Tuna etc.)  
 -Pentru cerinta de polimorfism static, este metoda addBuilding() din clasa Zoo cu 2 signaturi - addBuilding(int) si addBuilding(String). Astfel, se poate adaoga o cladire in Zoo cu tipul ei fiind dat fie printr-un string, fie printr-un int ce codifica tipul(0 - "bird", 1 - "predatory", 2 - "fish")  
 -Pentru cerinta de polimorfism dinamic, este metoda wake() din clasa abstracta Animal si fiecare clasa mostenita; deci, cand apelam metoda wakeAnimals() dintr-o cladire(folosind ArrrayList-ul de obiecte Animal), se apeleaza varianta de wake() specifica fiecarui animal.
+- Pentru afisarea intr-un .txt informatiile despre Zoo, avem metode ajutatoare getInfo() din Zoo si Building, care pentru fiecare cladire afiseaza tipul cladirii si animalele din cladire.
